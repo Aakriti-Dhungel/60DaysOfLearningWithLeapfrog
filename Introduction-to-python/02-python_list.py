@@ -25,8 +25,6 @@ fam2 = [["liz",1.7],
 print(fam) 
 type(fam2) # list - specific functionality, specific behavior
 
-
-
 #problem 1
 hall = 11.25
 kit = 18.0
@@ -136,8 +134,3 @@ y=x[:]
 y[1]="z"
 print(x)
 print(y)
-
-
-
-
-
