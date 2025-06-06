@@ -99,3 +99,35 @@ print("Updated data added:", np_baseball + updated)
 # Unit conversion
 conversion = np.array([0.0254, 0.453592, 1])
 print("Converted data (to metric):", np_baseball * conversion)
+
+
+#------------------------
+# NumPy: Basic Statistics
+# Data Analysis - Get to know your data
+# Little data → simply look at it, Big data → use statistics
+
+import numpy as np
+
+# Generate synthetic city-wide survey data
+# Arguments for np.random.normal():
+# → mean, standard deviation, number of samples
+
+height = np.round(np.random.normal(1.75, 0.20, 5000), 2)   # Height in meters
+weight = np.round(np.random.normal(60.32, 15, 5000), 2)    # Weight in kg
+
+# Combine height and weight into a single 2D array
+np_city = np.column_stack((height, weight))
+
+# -------------------------------------
+# Basic Statistics
+
+print("Mean height:", np.mean(np_city[:, 0]))                 # Mean
+print("Median height:", np.median(np_city[:, 0]))             # Median
+print("Correlation coefficient:\n", np.corrcoef(np_city[:, 0], np_city[:, 1]))  # Correlation
+print("Standard deviation of height:", np.std(np_city[:, 0])) # Standard Deviation
+
+# ----------------------
+# Other Useful Functions
+
+# sum(), sort(), min(), max(), etc.
+# NumPy enforces a single data type for performance
