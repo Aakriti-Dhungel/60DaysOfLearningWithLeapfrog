@@ -43,7 +43,7 @@ print(type(z))             # bool
 print(2 + 3)        # 5 (integer addition)
 print('ab' + 'cd')  # 'abcd' (string concatenation)
 
-# Variable assignment examples
+# Variable assignment 
 savings = 100
 print("Savings:", savings)
 
