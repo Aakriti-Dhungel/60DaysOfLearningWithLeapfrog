@@ -30,3 +30,17 @@ europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin',
           
 for key, value in europe.items() :
     print("the capital of " + key + " is " + str(value))
+
+
+
+#----------
+# Loop over NumPy array
+# np.nditer() : Efficiently iterates over each element in a NumPy array.
+import numpy as np 
+np_height = np.array([70, 65, 60])
+np_baseball = np.array([[180, 78], [215, 85], [210, 90]])
+for x in np_height:
+    print(str(x)+ " inches")
+
+for baseball in np.nditer(np_baseball) :
+    print(baseball)
